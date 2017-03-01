@@ -1,4 +1,7 @@
 ;(function($){
+
+    var beautifier;
+
     var Beautifier = function(ele,opt){
         this.$element = ele;
         this.defaults = {
@@ -19,8 +22,8 @@
     }
 
     $.fn.myPlugin = function(options){
-        var beautifier = new Beautifier(this,options);
-        return beautifier.beautify();
+        beautifier = new Beautifier(this,options);
+        return this; //这个地方的return this,我不return this呢 好像就不是jquery的对象了
     }
     
 }($));
