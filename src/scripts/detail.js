@@ -22,4 +22,5 @@
         var beautifier = new Beautifier(this,options);
         return beautifier.beautify();
     }
+    
 }($));
