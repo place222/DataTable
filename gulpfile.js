@@ -22,7 +22,7 @@ gulp.task('clean',function(){
 });
 //合并压缩
 gulp.task('js',function(){
-    gulp.src('src/scripts/*.js')
+    gulp.src('src/scripts/index.js')
     .pipe(concat('all.js'))
     .pipe(uglify())
     .pipe(gulp.dest('dist/js'));
