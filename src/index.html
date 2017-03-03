@@ -2,16 +2,25 @@
 <html>
 <head>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
-    <script src='js/jquery.js'></script>
-    <script src='js/all.js'></script>
+   <!--  <script src='js/jquery.js'></script>
+    <script src='js/all.js'></script> -->
+    <script type="text/javascript" src="scripts/jquery.js"></script>
+    <script type="text/javascript" src="scripts/index.js"></script>
     <title>domManip</title>
 </head>
 <body>
     <table id='test'></table>
     <script>
         $(function(){
-            $.DataTable({
-               
+           var table =  $.DataTable({
+               id:'test',
+               header:['Age','Name'],
+               data:[
+                {name:'123',age:2},
+                {name:'123',age:2},
+                {name:'123',age:2},
+                {name:'123',age:2}
+               ]
             });
         });
     </script>
